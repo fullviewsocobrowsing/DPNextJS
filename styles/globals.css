@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg-white: #ffffff;
+  --accent-sky: #2fb8f0;
+}
+
+html,body,#root{
+  height:100%;
+}
+
+body{
+  @apply bg-white text-slate-900 antialiased;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* small helper to make gradients softer */
+.bg-soft-sky{
+  background: linear-gradient(180deg,#f8fcff 0%,#ffffff 45%,#f4faff 100%);
+}
